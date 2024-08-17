@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://8cxu0stopnxo"]
+
+[ext_resource type="Texture2D" uid="uid://bcfbsxvp530d8" path="res://Placeholder Planets/Mercury.png" id="1_ku6ml"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ix1a6"]
+radius = 37.054
+
+[node name="Sun" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_ix1a6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_ku6ml")

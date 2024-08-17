@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://drsf0afvcl86k"]
+
+[ext_resource type="Script" path="res://Scripts/asteroid_spawner.gd" id="1_heyco"]
+[ext_resource type="Texture2D" uid="uid://c880qigk1nhmi" path="res://Placeholder Planets/Arrow.png" id="2_wexkx"]
+
+[node name="Asteroid Spawner" type="Node2D"]
+script = ExtResource("1_heyco")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_wexkx")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 7.5
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

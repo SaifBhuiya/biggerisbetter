@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dv4b2wgglxr7b"]
+
+[ext_resource type="Texture2D" uid="uid://dn3clh2krl027" path="res://Placeholder Planets/Jupiter.png" id="1_6620w"]
+[ext_resource type="Script" path="res://Scripts/orbit.gd" id="1_uah52"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0pod2"]
+radius = 29.1548
+
+[node name="Jupiter" type="Node2D"]
+script = ExtResource("1_uah52")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("1_6620w")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_0pod2")

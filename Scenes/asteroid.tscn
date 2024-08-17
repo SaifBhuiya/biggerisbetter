@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://xdor5cnpqd0t"]
+
+[ext_resource type="Texture2D" uid="uid://vakdv2uu7vg" path="res://Placeholder Planets/Moon.png" id="2_bvurh"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dndkn"]
+
+[node name="Asteroid spawner" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.025, 0.025)
+texture = ExtResource("2_bvurh")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_dndkn")
