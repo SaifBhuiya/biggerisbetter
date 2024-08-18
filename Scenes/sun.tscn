@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://8cxu0stopnxo"]
+[gd_scene load_steps=3 format=3 uid="uid://cycbfq46e1ax1"]
 
-[ext_resource type="Texture2D" uid="uid://bcfbsxvp530d8" path="res://Placeholder Planets/Mercury.png" id="1_ku6ml"]
+[ext_resource type="Texture2D" uid="uid://cf20qovht3d7m" path="res://Assets/programmer-art/Sun.png" id="1_5lrat"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ix1a6"]
 radius = 19.0
@@ -8,8 +8,8 @@ radius = 19.0
 [node name="Sun" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.05, 0.05)
-texture = ExtResource("1_ku6ml")
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_5lrat")
 
 [node name="Area2D" type="Area2D" parent="."]
 gravity_point = true

@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://kdq03tde4gex"]
+[gd_scene load_steps=3 format=3 uid="uid://d3fad2tq8svvh"]
 
-[ext_resource type="Texture2D" uid="uid://b0lkiptx3qkmv" path="res://Placeholder Planets/Earth.png" id="1_042ll"]
+[ext_resource type="Texture2D" uid="uid://vp1lomtl81wx" path="res://Assets/programmer-art/Earth.png" id="1_q64t4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_awhky"]
 radius = 19.0
@@ -8,8 +8,8 @@ radius = 19.0
 [node name="Earth" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.05, 0.05)
-texture = ExtResource("1_042ll")
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_q64t4")
 
 [node name="Line2D" type="Line2D" parent="."]
 
